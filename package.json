@@ -1,0 +1,25 @@
+{
+  "name": "bouncy_world_infor",
+  "version": "1.0.0",
+  "description": "static website for bouncy world services Bouncy World A brief description or tagline about your website.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esplanadeA/Bouncy_world_infor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esplanadeA/Bouncy_world_infor/issues"
+  },
+  "homepage": "https://github.com/esplanadeA/Bouncy_world_infor#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.71.1"
+  }
+}

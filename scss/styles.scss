@@ -1,0 +1,54 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/functions";
+
+// Define primary and secondary colors
+$primary-color: #7879F1;         // purple
+$secondary-color: #EF5DA8;  
+$primary-color-rgb: 120, 121, 241;     // pink
+
+// Additional colors
+$icon-color: #FA7436; 
+$btn-primary-color: #fff;   // Text color for primary buttons
+$btn-primary-bg: $primary-color;
+$button-color:   #A5A6F6   ;  // purple
+$info-color: #17a2b8;            // Cyan
+$warning-color: #ffc107;         // Yellow
+$danger-color: #dc3545;          // Red
+
+// Grayscale colors
+$black: #000000;
+$white: #ffffff;
+
+// Usage of Bootstrap's $gray-* colors
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Apply primary and secondary colors to Bootstrap variables
+$custom-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "icon": $icon-color,
+  "button": $button-color,
+  "info": $info-color,
+  "warning": $warning-color,
+  "danger": $danger-color,
+  "light": $gray-100,
+  "dark": $gray-800,
+);
+
+$theme-colors:map-merge($theme-colors,$custom-colors)
+// Import Bootstrap's SCSS files
+
+// .btn-primary {
+//   color: $btn-primary-color;       // Text color for primary buttons
+//   background-color: $btn-primary-bg; // Background color for primary buttons
+//   border-color: $primary-color;    // Border color for primary buttons
+// }
