@@ -57,3 +57,8 @@ $theme-colors:map-merge($theme-colors,$custom-colors);
   --bs-bg-opacity: 1;
   background-color: $primary-color !important;
 }
+
+.bg-secondary {
+  --bs-bg-opacity: 1;
+  background-color: $secondary-color !important;
+}
