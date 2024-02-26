@@ -11844,5 +11844,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-primary {
+  color: #fff;
+  background-color: #7879F1;
+  border-color: #7879F1;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #7879F1 !important;
+}
 
 /*# sourceMappingURL=styles.css.map */

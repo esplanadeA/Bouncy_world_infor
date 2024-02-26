@@ -44,11 +44,16 @@ $custom-colors: (
   "dark": $gray-800,
 );
 
-$theme-colors:map-merge($theme-colors,$custom-colors)
+$theme-colors:map-merge($theme-colors,$custom-colors);
 // Import Bootstrap's SCSS files
 
-// .btn-primary {
-//   color: $btn-primary-color;       // Text color for primary buttons
-//   background-color: $btn-primary-bg; // Background color for primary buttons
-//   border-color: $primary-color;    // Border color for primary buttons
-// }
+.btn-primary {
+  color: $btn-primary-color;       // Text color for primary buttons
+  background-color: $btn-primary-bg; // Background color for primary buttons
+  border-color: $primary-color;    // Border color for primary buttons
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: $primary-color !important;
+}
