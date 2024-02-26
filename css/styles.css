@@ -11855,4 +11855,9 @@ textarea.form-control-lg {
   background-color: #7879F1 !important;
 }
 
+.bg-secondary {
+  --bs-bg-opacity: 1;
+  background-color: #EF5DA8 !important;
+}
+
 /*# sourceMappingURL=styles.css.map */
