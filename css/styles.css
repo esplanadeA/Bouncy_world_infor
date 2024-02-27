@@ -11860,4 +11860,11 @@ textarea.form-control-lg {
   background-color: #EF5DA8 !important;
 }
 
+.product_cards {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -62,3 +62,11 @@ $theme-colors:map-merge($theme-colors,$custom-colors);
   --bs-bg-opacity: 1;
   background-color: $secondary-color !important;
 }
+
+.product_cards{
+   display:flex;
+   flex-direction: row;
+   margin: auto;
+   justify-content: space-evenly;
+   
+}
