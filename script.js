@@ -16,7 +16,7 @@ cards.forEach(function (card, index) {
 });
 
 $('#recipeCarousel').carousel({
-  interval: 10000,
+  interval: 30000,
 });
 
 $('.carousel .carousel-item').each(function () {
