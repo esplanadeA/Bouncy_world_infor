@@ -11,7 +11,7 @@ var imageUrls = [
 // Get all card elements
 var cards = document.querySelectorAll('.card');
 cards.forEach(function (card, index) {
-  var img = card.querySelector('.card-img-top');
+  var img = card.querySelector('.card-image');
   img.src = imageUrls[index]; // Assign the image URL to the src attribute of the img element
 });
 
@@ -22,17 +22,16 @@ $('#recipeCarousel').carousel({
 $('.carousel .carousel-item').each(function () {
   var minPerSlide = 3;
   var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
+  var cardCount = $(this).find('.card').length;
 
-  for (var i = 0; i < minPerSlide; i++) {
-    next = next.next();
-    if (!next.length) {
-      next = $(this).siblings(':first');
+  if (cardCount < minPerSlide) {
+    var cloneCount = minPerSlide - cardCount;
+    for (var i = 0; i < cloneCount; i++) {
+      var cloneCard = $(this)
+        .find('.card')
+        .eq(i % cardCount)
+        .clone();
+      $(this).append(cloneCard);
     }
-
-    next.children(':first-child').clone().appendTo($(this));
   }
 });
