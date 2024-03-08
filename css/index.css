@@ -46,10 +46,9 @@ overflow: hidden;
       position: fixed;
       bottom: 0;
       width: 100%;
-      background-color: #f8f9fa; /* Change to match your desired footer background color */
-      padding: 10px 0; /* Adjust the padding as needed */
+      background-color: #f8f9fa;
       text-align: center;
-      z-index: 1000; /* Ensure footer stays above other content */
+      z-index: 1000; 
     }
 
      .line {
