@@ -41,3 +41,19 @@ overflow: hidden;
    height: 100vh;
 
 }
+
+ .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa; /* Change to match your desired footer background color */
+      padding: 10px 0; /* Adjust the padding as needed */
+      text-align: center;
+      z-index: 1000; /* Ensure footer stays above other content */
+    }
+
+     .line {
+      border-top: 1px solid #ccc; /* Change the color and style of the line as needed */
+      width: 50%; /* Adjust the width of the line */
+      margin: 20px auto; /* Center the line horizontally and add spacing */
+    }
