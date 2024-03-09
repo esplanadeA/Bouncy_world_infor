@@ -35,25 +35,40 @@
   </head>
   <body>
     <!-- nav bar -->
-    <header class="bg-primary d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <header class="bg-primary d-flex flex-wrap justify-content-center border-bottom">
+      <nav class="navbar navbar-expand-lg">
+      <a href="/" class=" navbar-brand d-flex  mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
         <span class="fs-4">Bouncy World</span>
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <ul class="nav nav-pills text-white">
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Bouncy Castle</a>
+        <a class="nav-link" href="#">CONTACT</a>
+        <a class="nav-link" href="#">TERMS &CONDITION</a>
+        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">DELIVERY FEES</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">ABOUT</a>
+      </div>
+    </div>
+      <!-- <ul class="nav nav-pills text-white">
         <li class="nav-item text-white"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item text-white"><a href="#" class="nav-link">BOU</a></li>
         <li class="nav-item"><a href="#" class="nav-link">TERMS &CONDITION </a></li>
         <li class="nav-item"><a href="#" class="nav-link">DELIVERY FEES</a></li>
         <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li> 
         <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-      </ul>
+      </ul> -->
+      </nav>
     </header>
 
     <!-- landing: hero -->
     <div id="hero-banner">
-      <div class="container col-xxl-8 px-7 py-7">
+      <div class="container col-xxl-8 px-6 py-7">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="circle_under"></div>
           <div class="col-10 col-sm-8 col-lg-6">
@@ -74,8 +89,7 @@
               prebuilt components, and powerful JavaScript plugins.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Check our Bouncy Range</button>
             </div>
           </div>
         </div>
@@ -469,9 +483,7 @@
 
 <footer class="footer d-flex bg-primary align-items-center">
   <div class="container">
-    <p class="text-center text-white fw-light fs-6 mb-0">Bouncy World</p> 
-    <p class="text-center text-white fw-light fs-6 mb-0">2024</p>
-   
+    <p class="text-center text-white fw-light fs-6 mb-0">Copyright © Bouncy World 2024</p> 
   </div>
 </footer>
    
